@@ -72,6 +72,22 @@ function configure_zram_parameters() {
 	fi
 }
 
+verify_pasr_support()
+{
+	ddr_type=`od -An -tx /proc/device-tree/memory/ddr_device_type`
+	ddr_type5="08"
+
+	if [ -d /sys/kernel/mem-offline ]; then
+		#only LPDDR5 supports PAAR
+		if [ ${ddr_type:4:2} != $ddr_type5 ]; then
+			setprop vendor.pasr.activemode.enabled false
+		fi
+
+		setprop vendor.pasr.enabled true
+		echo "pasr-enabled"
+	fi
+}
+
 function configure_read_ahead_kb_values() {
 	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
 	MemTotal=${MemTotalStr:16:8}
@@ -133,7 +149,7 @@ function configure_memory_parameters() {
 	MemTotal=${MemTotalStr:16:8}
 	let RamSizeGB="( $MemTotal / 1048576 ) + 1"
 
-	have_pasr=""
+	have_pasr=$(verify_pasr_support)
 	if [ -z $have_pasr ]; then
 		## Goal is to allow all allocations to use THP whilst minimizing allocaiton delays
 		# Allow all eligibe page faults to use THP
@@ -155,6 +171,9 @@ function configure_memory_parameters() {
 		echo 0 > /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none
 		echo 0 > /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_swap
 		echo 0 > /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_shared
+	else
+		# Do not enable THP is PASR is enabled
+		echo never > /sys/kernel/mm/transparent_hugepage/enabled
 	fi
 
 	# Set the min_free_kbytes to standard kernel value

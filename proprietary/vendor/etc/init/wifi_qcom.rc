@@ -86,6 +86,3 @@ service ftm_ptt /system/bin/ftm_ptt -d
 
 on charger
     write /sys/kernel/cnss/charger_mode 1
-
-on property:ro.build.type=user && property:ro.boot.debug_level=0x4f4c
-	stop vendor.cnss_diag

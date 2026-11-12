@@ -590,6 +590,7 @@ PRODUCT_PACKAGES += \
     libdsmanager \
     libdsutils \
     libdualcam_refocus_video \
+    libegis_fp_normal_sensor_test \
     libengine_did \
     libengmode_client \
     libese-grdg \
@@ -610,6 +611,7 @@ PRODUCT_PACKAGES += \
     libgame_enhance \
     libgaya \
     libgeofencing \
+    libgf_in_system_lib \
     libgnss \
     libgnsspps \
     libgps.utils \
@@ -857,6 +859,7 @@ PRODUCT_PACKAGES += \
     libsnpe_dsp_domains_v3 \
     libsnpe_wrapper \
     libsns_api \
+    libsns_device_mode_stub \
     libsns_direct_channel_stub \
     libsnsapi \
     libsnsdiaglog \
@@ -878,6 +881,7 @@ PRODUCT_PACKAGES += \
     libstagefright_foundation_vendor \
     libsubsystem_control \
     libswregistrationalgo \
+    libsynaFpSensorTestNwd \
     libsynergy_loc_api \
     libsynx \
     libsys_info_cache \
@@ -899,6 +903,9 @@ PRODUCT_PACKAGES += \
     libtlpd_crypto \
     libtlpd_internal \
     libtlpd_logger \
+    libtriplecam_image_optical_zoom \
+    libtriplecam_optical_zoom_control \
+    libtriplecam_video_optical_zoom \
     libtrustedapploader \
     libtswrappercommon \
     libubifocus \

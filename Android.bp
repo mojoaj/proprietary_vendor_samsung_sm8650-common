@@ -20134,7 +20134,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsfp_teegw.so",
             ],
             shared_libs: [
-                "libion",
+                "libsfp_ion_shim",
                 "libQSEEComAPI",
                 "libdmabufheap",
                 "libbase",

@@ -19,24 +19,24 @@
 
 <!--
 mtuTableEntry attributes:
-    numeric:MCC+MNC from IMSI
-    mtu:MTU value size
-    rat:
-        SRIL_RAT_GEN_UNKNOWN = 0,
+	numeric:MCC+MNC from IMSI
+	mtu:MTU value size
+	rat:
+	    SRIL_RAT_GEN_UNKNOWN = 0,
            SRIL_RAT_GEN_2G = 1,
            SRIL_RAT_GEN_3G = 2,
            SRIL_RAT_GEN_4G = 3,
            SRIL_RAT_GEN_WIRELESS = 4,
            SRIL_RAT_GEN_5G = 5
-    proto:
-           SRIL_PROTO_INVALID = -1,
+	proto:
+	       SRIL_PROTO_INVALID = -1,
               SRIL_PROTO_UNKNOWN = 0,
               SRIL_PROTO_IPV4 = 1,
               SRIL_PROTO_IPV6 = 2,
               SRIL_PROTO_IPV4V6 = (SRIL_PROTO_IPV4 | SRIL_PROTO_IPV6),
               SRIL_PROTO_PPP
-    profile:
-           SRIL_DATA_PROFILE_INVALID = -1,
+	profile:
+	       SRIL_DATA_PROFILE_INVALID = -1,
               SRIL_DATA_PROFILE_DEFAULT = 0,
               SRIL_DATA_PROFILE_TETHERED = 1,
               SRIL_DATA_PROFILE_IMS = 2,
@@ -64,8 +64,6 @@ mtuTableEntry attributes:
     <mtuTableEntry numeric="26201" mtu="1340" profile="2"/>
     <mtuTableEntry numeric="26201" mtu="1280" rat="4"/>
     <mtuTableEntry numeric="26206" mtu="1280" rat="4"/>
-    <mtuTableEntry numeric="90140" mtu="1340" profile="2"/>
-    <mtuTableEntry numeric="90140" mtu="1280" rat="4"/>
 
 <!-- DT Austria -->
     <mtuTableEntry numeric="23203" mtu="1280" rat="4"/>
@@ -473,8 +471,6 @@ mtuTableEntry attributes:
 <!-- Verizon (Default : 1428) -->
     <mtuTableEntry numeric="311480" mtu="1428"/>
     <mtuTableEntry numeric="311270" mtu="1428"/>
-    <mtuTableEntry numeric="310590" mtu="1428"/>
-    <mtuTableEntry numeric="310599" mtu="1428"/>
 
 <!-- Claro Puerto Rico -->
     <mtuTableEntry numeric="330110" mtu="1300" proto="1"/>
@@ -606,12 +602,11 @@ mtuTableEntry attributes:
     <mtuTableEntry numeric="43408" mtu="1280" rat="4"/>
 
 <!--  JPN SBM -->
-    <mtuTableEntry numeric="44020" mtu="1300" profile="2"/>
     <mtuTableEntry numeric="44020" mtu="1358"/>
 
 <!-- JPN KDDI -->
-    <mtuTableEntry numeric="44050" mtu="1440"/>
-    <mtuTableEntry numeric="44051" mtu="1440"/>
+    <mtuTableEntry numeric="44050" mtu="1420"/>
+    <mtuTableEntry numeric="44051" mtu="1420"/>
 
 <!-- JPN KDDI added ePLMN -->
     <mtuTableEntry numeric="44007" mtu="1420"/>
@@ -754,10 +749,6 @@ mtuTableEntry attributes:
 
 <!-- Free Senegal -->
     <mtuTableEntry numeric="60802" mtu="1280" rat="4"/>
-
-<!-- Somnet, Hormuud Operators - Kenya -->
-    <mtuTableEntry numeric="63720" mtu="1440" profile="2"/>
-    <mtuTableEntry numeric="63750" mtu="1440" profile="2"/>
 
 <!-- Airtel Zambia -->
     <mtuTableEntry numeric="64501" mtu="1280" rat="4"/>

@@ -11,29 +11,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/DsgpPolicy.csv:$(TARGET_COPY_OUT_VENDOR)/etc/DsgpPolicy.csv \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/config/PCC_Config-timestamp:$(TARGET_COPY_OUT_VENDOR)/etc/aip/config/PCC_Config-timestamp \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/config/pcc_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/aip/config/pcc_config.json \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/1129_dummy_1441_cached.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/1129_dummy_1441_cached.dlc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/CIGSOL_SWISP_200M_v1.6.2_Exp18_e12850_592x4176_A16W8_cached.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/CIGSOL_SWISP_200M_v1.6.2_Exp18_e12850_592x4176_A16W8_cached.dlc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/CIGSOL_fp32_ver220923_HTP_FP16_cached.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/CIGSOL_fp32_ver220923_HTP_FP16_cached.dlc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/ModelSet2_AIMFISP-timestamp:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/ModelSet2_AIMFISP-timestamp \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/ModelSet2_eraw_AIMFISP-timestamp:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/ModelSet2_eraw_AIMFISP-timestamp \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/ModelSet_AIMFISP-timestamp:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/ModelSet_AIMFISP-timestamp \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/ModelSet_AISR-timestamp:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/ModelSet_AISR-timestamp \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/ModelSet_eraw_AIMFISP-timestamp:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/ModelSet_eraw_AIMFISP-timestamp \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/ModelSet_v-timestamp:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/ModelSet_v-timestamp \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/aiisp_1x_C2C_cached.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/aiisp_1x_C2C_cached.dlc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/aiisp_1x_T2C_Indoor_cached.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/aiisp_1x_T2C_Indoor_cached.dlc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/aiisp_1x_T2C_Outdoor_cached.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/aiisp_1x_T2C_Outdoor_cached.dlc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/aiisp_1x_ll_C2C_cached.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/aiisp_1x_ll_C2C_cached.dlc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/aiisp_2x_C2C_cached.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/aiisp_2x_C2C_cached.dlc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/aiisp_2x_ll_C2C_cached.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/aiisp_2x_ll_C2C_cached.dlc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/aiisp_4x_C2C_cached.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/aiisp_4x_C2C_cached.dlc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/mfisp_eraw_model_mf_Tetra_RGB_fp16.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/mfisp_eraw_model_mf_Tetra_RGB_fp16.dlc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/mfisp_eraw_model_nl_Tetra_RGB_fp16.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/mfisp_eraw_model_nl_Tetra_RGB_fp16.dlc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/mfisp_model_ll_Tetra_RGB_fp16.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/mfisp_model_ll_Tetra_RGB_fp16.dlc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/mfisp_model_mf_Tetra_RGB_fp16.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/mfisp_model_mf_Tetra_RGB_fp16.dlc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/mfisp_model_nl_Tetra_RGB_fp16.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/mfisp_model_nl_Tetra_RGB_fp16.dlc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/mfisp_tmodel_ll_Tetra_RGB_fp16.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/mfisp_tmodel_ll_Tetra_RGB_fp16.dlc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/mfisp_tmodel_nl_Tetra_RGB_fp16.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/mfisp_tmodel_nl_Tetra_RGB_fp16.dlc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/batching.conf:$(TARGET_COPY_OUT_VENDOR)/etc/batching.conf \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/beauty/settings.dat:$(TARGET_COPY_OUT_VENDOR)/etc/beauty/settings.dat \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/btcon.json:$(TARGET_COPY_OUT_VENDOR)/etc/btcon.json \
@@ -210,18 +192,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/camxfl300v2indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxfl300v2indices.bin \
     vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/camxflcustom300indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxflcustom300indices.bin \
     vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
-    vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_s5khp2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_s5khp2.bin \
-    vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.12_lsi_s5k3lu_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.12_lsi_s5k3lu_full.bin \
-    vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_lsi_s5k3lu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_lsi_s5k3lu.bin \
-    vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.2_sony_imx564.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.2_sony_imx564.bin \
-    vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.3_sony_imx754_x3.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.3_sony_imx754_x3.bin \
-    vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.6_sony_imx754_x10.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.6_sony_imx754_x10.bin \
-    vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.6_sony_imx854.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.6_sony_imx854.bin \
     vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5k3lu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5k3lu.bin \
-    vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5khp2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5khp2.bin \
-    vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx564.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx564.bin \
-    vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx754.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx754.bin \
-    vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx854.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx854.bin \
     vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/f_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/f_dual_calibration.bin \
     vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
     vendor/samsung/sm8650-common/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
@@ -343,8 +314,6 @@ PRODUCT_PACKAGES += \
     com.ss.stats.af \
     com.ss.stats.awb \
     com.ss.stats.pdlib \
-    libTsAeFront_e3 \
-    libTsAe_e3 \
     libcamxevainterface \
     libdepthmapwrapper_itof \
     libdepthmapwrapper_secure \
@@ -413,7 +382,6 @@ PRODUCT_PACKAGES += \
     libAIHighRes_interface \
     libAIMFISP.camera.samsung \
     libAIMFISP_core.camera.samsung \
-    libAISR_core.camera.samsung \
     libAISegmenter_v2.camera.samsung \
     libAImode_wrapper.camera.samsung \
     libAIphoto_core.camera.samsung \
@@ -470,8 +438,6 @@ PRODUCT_PACKAGES += \
     libPersonal_core.camera.samsung \
     libPetDetector_interface \
     libPetDetector_v1.camera.samsung \
-    libPortraitDistortionCorrection.arcsoft \
-    libPortraitDistortionCorrectionCali.arcsoft \
     libPortraitSolution.camera.samsung_preview \
     libQRInterface.camera.samsung \
     libQSEEComAPI \
@@ -494,8 +460,6 @@ PRODUCT_PACKAGES += \
     libSnpeHtpV75Stub \
     libTetraMFP10.camera.samsung \
     libTetraMFP10Tuning.camera.samsung \
-    libTetraSR10.camera.samsung \
-    libTetraSR10Tuning.camera.samsung \
     libTouchInputVM \
     libTrustedInput \
     libTrustedInputAIDL \
@@ -505,23 +469,17 @@ PRODUCT_PACKAGES += \
     libTrustedUIAIDL \
     libTrustedUITZ \
     libTrustedUIVM \
-    libTsAf_E123Q \
-    libTsAwbFront_E123 \
-    libTsAwb_E3 \
     libTxPwrJni \
-    libUltraWideDistortionCorrection.camera.samsung \
-    libUltraWideDistortionCorrection.uniplugin@1.0 \
     libUniPluginUtils \
     libUniScaler.uniplugin@1.0 \
     libVendorSemDataProps \
     libVendorSemTelephonyProps \
     libVoiceSdk \
-    libWideDistortionCorrection.camera.samsung \
     lib_SamsungRec_08020 \
     lib_SoundAlive_3DPosition_ver202 \
     lib_SoundAlive_AlbumArt_ver105 \
     lib_SoundAlive_play_plus_ver800 \
-    lib_SoundBooster_ver2000 \
+    lib_SoundBooster_ver2050 \
     lib_lvacfs \
     lib_profiler \
     libadm \
@@ -612,6 +570,7 @@ PRODUCT_PACKAGES += \
     libdsmanager \
     libdsutils \
     libdualcam_refocus_video \
+    libegis_fp_normal_sensor_test \
     libengine_did \
     libengmode_client \
     libese-grdg \
@@ -632,6 +591,7 @@ PRODUCT_PACKAGES += \
     libgame_enhance \
     libgaya \
     libgeofencing \
+    libgf_in_system_lib \
     libgnss \
     libgnsspps \
     libgps.utils \
@@ -704,7 +664,6 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     liblowi_common \
     liblowi_wifihal \
-    libmaskdetection.uniplugin@1.0 \
     libmcaimegpu.samsung \
     libmctfengine_stub \
     libmdmdetect \
@@ -723,9 +682,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_pdpc \
     libmmosal_vendor \
     libmpbase \
-    libmulticam_image_optical_zoom \
-    libmulticam_optical_zoom_control \
-    libmulticam_video_optical_zoom \
     libmultiobject_tracker \
     libnanopb \
     libndfilter_preview.uniplugin@1.0 \
@@ -873,6 +829,7 @@ PRODUCT_PACKAGES += \
     libsnpe_dsp_domains_v3 \
     libsnpe_wrapper \
     libsns_api \
+    libsns_device_mode_stub \
     libsns_direct_channel_stub \
     libsnsapi \
     libsnsdiaglog \
@@ -894,6 +851,7 @@ PRODUCT_PACKAGES += \
     libstagefright_foundation_vendor \
     libsubsystem_control \
     libswregistrationalgo \
+    libsynaFpSensorTestNwd \
     libsynergy_loc_api \
     libsynx \
     libsys_info_cache \
@@ -915,6 +873,9 @@ PRODUCT_PACKAGES += \
     libtlpd_crypto \
     libtlpd_internal \
     libtlpd_logger \
+    libtriplecam_image_optical_zoom \
+    libtriplecam_optical_zoom_control \
+    libtriplecam_video_optical_zoom \
     libtrustedapploader \
     libtswrappercommon \
     libubifocus \
@@ -939,7 +900,7 @@ PRODUCT_PACKAGES += \
     libxtadapter \
     libzoomroi.samsung \
     libzoomroi_lite.samsung \
-    nfc_nci_nxpsn_ecp \
+    nfc_nci_nxpsn \
     qti.video.utils.videobufferlayout \
     libSnpeHtpV75Skel \
     libapn_dsp_skel \

@@ -63,15 +63,6 @@ on post-fs-data
     chmod 0660 /dev/qm35-coredump
     chown uwb uwb /dev/qm35-coredump
 
-on property:ro.vendor.uwb.feature.chipname=wcn7881
-    chmod 0660 /dev/spiuwb
-    chown uwb uwb /dev/spiuwb
-    mkdir /sys/kernel/tracing/instances/spi_cnss
-    chmod 775 /sys/kernel/tracing/instances/spi_cnss
-    chown uwb uwb /sys/kernel/tracing/instances/spi_cnss
-    write /sys/kernel/tracing/instances/spi_cnss/events/spi_cnss_trace/enable 1
-    write /sys/kernel/tracing/instances/spi_cnss/tracing_on 1
-
 on property:ro.vendor.uwb.feature.chipname=sr100
     chmod 0660 /dev/sr100
     chown uwb uwb /dev/sr100

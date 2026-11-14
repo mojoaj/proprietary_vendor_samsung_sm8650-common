@@ -508,7 +508,7 @@
 
     <!-- Device : TSP: TTSP, TCHD, HKEY -->
     <hwparam_info compID="TSP" feature="TTSP" hitType="sm" compVer="0.0" compManufacture="" order_compID="5" order_feature="1" >
-        <sysfs_node type="M" key="" value="/sys/class/sec/tsp/hw_param" clear="1">
+        <sysfs_node type="M" key="" value="/sys/class/sec/tsp1/hw_param" clear="1">
             <key_info keyname="TITO" min="0" max="0" desc1="tsp pattern check" desc2="" desc3="" desc4="" type1="1" type2="99"/>
             <key_info keyname="TMUL" min="0" max="0" desc1="multi finger count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
             <key_info keyname="TWET" min="0" max="0" desc1="wet mode enter count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
@@ -523,15 +523,37 @@
             <key_info keyname="TMOD" min="" max="" desc1="ic panel modue id" desc2="" desc3="" desc4="" type1="1" type2="99" />
             <key_info keyname="TVEN" min="" max="" desc1="TSP IC vendor" desc2="" desc3="" desc4="" type1="1" type2="10" />
         </sysfs_node>
+        <sysfs_node type="M" key="" value="/sys/class/sec/tsp2/hw_param" clear="1">
+            <key_info keyname="TITO2" min="0" max="0" desc1="tsp pattern check" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+            <key_info keyname="TWET2" min="0" max="0" desc1="wet mode enter count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+            <key_info keyname="TNOI2" min="0" max="0" desc1="noise mode enter count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+            <key_info keyname="TCOM2" min="0" max="0" desc1="i2c error count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="TCHK2" min="0" max="0" desc1="TSP FLASH CHECKSUM" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="TRIC2" min="0" max="0" desc1="ic reset count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+            <key_info keyname="TMOD2" min="" max="" desc1="ic panel modue id" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="TVEN2" min="" max="" desc1="TSP IC vendor" desc2="" desc3="" desc4="" type1="1" type2="10" />
+        </sysfs_node>
     </hwparam_info>
 
-    <hwparam_info compID="TSP" feature="HKEY" hitType="sm" compVer="0.0" compManufacture="" order_compID="5" order_feature="4" >
-        <sysfs_node type="M" key="" value="/sys/class/sec/sec_key/key_pressed_count" clear="1">
-            <key_info keyname="KVUP" min="" max="" desc1="volume up key count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-            <key_info keyname="KVDN" min="" max="" desc1="volume down key count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-            <key_info keyname="KHOM" min="" max="" desc1="home key count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-            <key_info keyname="KBIX" min="" max="" desc1="bixby key count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
-            <key_info keyname="KPWR" min="" max="" desc1="power key count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+    <hwparam_info compID="TSP" feature="SPEN" hitType="sm" compVer="0.0" compManufacture="" order_compID="5" order_feature="5" >
+        <sysfs_node type="M" key="" value="/sys/class/sec/sec_epen/hw_param" clear="1" >
+            <key_info keyname="RESET" min="" max="" desc1="counting of abnormal reset" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+            <key_info keyname="I2C_FAIL" min="" max="" desc1="counting of i2c fail" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+            <key_info keyname="PEN_OUT" min="" max="" desc1="counting of pen out" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+            <key_info keyname="SDCONN" min="0" max="0" desc1="check of digitizer connection" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+            <key_info keyname="SECCNT" min="0" max="0" desc1="counting of digitizer error coils" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+            <key_info keyname="SADCVAL" min="0" max="0" desc1="min value of digitizer adc" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+            <key_info keyname="SECLVL" min="0" max="0" desc1="check of result for callevel" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+            <key_info keyname="SCALLVL" min="0" max="0" desc1="min value of digitizer callevel" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+            <key_info keyname="ESDMCCNT" min="0" max="0" desc1="ESD Max Continuous CouNT" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+            <key_info keyname="ESDICNT" min="0" max="0" desc1="ESD Interrupt CouNT" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+            <key_info keyname="ESDPCNT" min="0" max="0" desc1="ESD Packet CouNT" desc2="" desc3="" desc4="" type1="1" type2="99"/>
+        </sysfs_node>
+    </hwparam_info>
+
+    <hwparam_info compID="TSP" feature="HKEY" hitType="sm" compVer="0.0" compManufacture="" order_compID="5" order_feature="3" >
+        <sysfs_node type="M" key="" value="/sys/class/sec/hall_ic/hall_count" clear="0">
+            <key_info keyname="FCNT" min="" max="" desc1="folding count" desc2="" desc3="" desc4="" type1="1" type2="99"/>
         </sysfs_node>
     </hwparam_info>
     <!-- Device : TSP: TTSP, TCHD, HKEY -->
@@ -686,126 +708,58 @@
         <sysfs_node type="S" key="CAMFWR3" value="/sys/class/camera/rear/rear3_camfw" clear="0" >
             <key_info keyname="CAMFWR3" min="" max="" desc1="Rear3 camera firmware info" desc2="" desc3="" desc4="" type1="1" type2="10" />
         </sysfs_node>
-        <sysfs_node type="S" key="CAMFWR4" value="/sys/class/camera/rear/rear4_camfw" clear="0" >
-            <key_info keyname="CAMFWR4" min="" max="" desc1="Rear4 camera firmware info" desc2="" desc3="" desc4="" type1="1" type2="10" />
+        <sysfs_node type="S" key="CAMFWF2" value="/sys/class/camera/front/front2_camfw" clear="0" >
+            <key_info keyname="CAMFWF2" min="" max="" desc1="Front2 camera firmware info" desc2="" desc3="" desc4="" type1="1" type2="10" />
         </sysfs_node>
         <sysfs_node type="M" key="" value="/sys/class/camera/rear/rear_hwparam" clear="1" >
             <key_info keyname="I2CR_AF" min="0" max="0" desc1="Actuator i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="I2CR_COM" min="0" max="0" desc1="Companion i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
             <key_info keyname="I2CR_OIS" min="0" max="0" desc1="OIS i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
             <key_info keyname="I2CR_SEN" min="0" max="0" desc1="Sensor i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="MIPIR_COM" min="0" max="0" desc1="Companion MIPI error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
             <key_info keyname="MIPIR_SEN" min="0" max="0" desc1="Sensor MIPI error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
             <key_info keyname="CAMIR_ID" min="0" max="0" desc1="Camera info" desc2="" desc3="" desc4="" type1="0" type2="10" />
-            <key_info keyname="MIPIR_INFO" min="0" max="0" desc1="RF info" desc2="" desc3="" desc4="" type1="1" type2="99" />
-            <key_info keyname="I2CR_EEP" min="0" max="0" desc1="EEPROM i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-            <key_info keyname="CRCR_EEP" min="0" max="0" desc1="EEPROM CRC error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-            <key_info keyname="CAMR_CNT" min="0" max="0" desc1="Camera enterance count" desc2="" desc3="" desc4="" type1="1" type2="99" />
-			<key_info keyname="WIFIR_INFO" min="0" max="0" desc1="WIFI info" desc2="" desc3="" desc4="" type1="1" type2="2" />
-			<key_info keyname="AFR_FAIL" min="0" max="0" desc1="AF hall error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-			<key_info keyname="AFR_INFO" min="0" max="0" desc1="AF hall error info" desc2="" desc3="" desc4="" type1="1" type2="2" />
         </sysfs_node>
         <sysfs_node type="M" key="" value="/sys/class/camera/front/front_hwparam" clear="1" >
             <key_info keyname="I2CF_AF" min="0" max="0" desc1="Actuator i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="I2CF_COM" min="0" max="0" desc1="Companion i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
             <key_info keyname="I2CF_OIS" min="0" max="0" desc1="OIS i2c error count" desc2="" desc3="" desc4="" type1="0" type2="0" />
             <key_info keyname="I2CF_SEN" min="0" max="0" desc1="Sensor i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="MIPIF_COM" min="0" max="0" desc1="Companion MIPI error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
             <key_info keyname="MIPIF_SEN" min="0" max="0" desc1="Sensor MIPI error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
             <key_info keyname="CAMIF_ID" min="0" max="0" desc1="Camera info" desc2="" desc3="" desc4="" type1="0" type2="10" />
-            <key_info keyname="MIPIF_INFO" min="0" max="0" desc1="RF info" desc2="" desc3="" desc4="" type1="1" type2="99" />
-            <key_info keyname="I2CF_EEP" min="0" max="0" desc1="EEPROM i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-            <key_info keyname="CRCF_EEP" min="0" max="0" desc1="EEPROM CRC error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-            <key_info keyname="CAMF_CNT" min="0" max="0" desc1="Camera enterance count" desc2="" desc3="" desc4="" type1="1" type2="99" />
-			<key_info keyname="WIFIF_INFO" min="0" max="0" desc1="WIFI info" desc2="" desc3="" desc4="" type1="1" type2="2" />
-			<key_info keyname="AFF_FAIL" min="0" max="0" desc1="AF hall error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-			<key_info keyname="AFF_INFO" min="0" max="0" desc1="AF hall error info" desc2="" desc3="" desc4="" type1="1" type2="2" />
         </sysfs_node>
         <sysfs_node type="M" key="" value="/sys/class/camera/rear/rear2_hwparam" clear="1" >
             <key_info keyname="I2CR2_AF" min="0" max="0" desc1="Actuator i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="I2CR2_COM" min="0" max="0" desc1="Companion i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
             <key_info keyname="I2CR2_OIS" min="0" max="0" desc1="OIS i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
             <key_info keyname="I2CR2_SEN" min="0" max="0" desc1="Sensor i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="MIPIR2_COM" min="0" max="0" desc1="Companion MIPI error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
             <key_info keyname="MIPIR2_SEN" min="0" max="0" desc1="Sensor MIPI error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
             <key_info keyname="CAMIR2_ID" min="0" max="0" desc1="Camera info" desc2="" desc3="" desc4="" type1="0" type2="10" />
-            <key_info keyname="MIPIR2_INFO" min="0" max="0" desc1="RF info" desc2="" desc3="" desc4="" type1="1" type2="99" />
-            <key_info keyname="I2CR2_EEP" min="0" max="0" desc1="EEPROM i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-            <key_info keyname="CRCR2_EEP" min="0" max="0" desc1="EEPROM CRC error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-            <key_info keyname="CAMR2_CNT" min="0" max="0" desc1="Camera enterance count" desc2="" desc3="" desc4="" type1="1" type2="99" />
-			<key_info keyname="WIFIR2_INFO" min="0" max="0" desc1="WIFI info" desc2="" desc3="" desc4="" type1="1" type2="2" />
-			<key_info keyname="AFR2_FAIL" min="0" max="0" desc1="AF hall error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-			<key_info keyname="AFR2_INFO" min="0" max="0" desc1="AF hall error info" desc2="" desc3="" desc4="" type1="1" type2="2" />
         </sysfs_node>
         <sysfs_node type="M" key="" value="/sys/class/camera/rear/rear3_hwparam" clear="1" >
             <key_info keyname="I2CR3_AF" min="0" max="0" desc1="Actuator i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="I2CR3_COM" min="0" max="0" desc1="Companion i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
             <key_info keyname="I2CR3_OIS" min="0" max="0" desc1="OIS i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
             <key_info keyname="I2CR3_SEN" min="0" max="0" desc1="Sensor i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="MIPIR3_COM" min="0" max="0" desc1="Companion MIPI error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
             <key_info keyname="MIPIR3_SEN" min="0" max="0" desc1="Sensor MIPI error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
             <key_info keyname="CAMIR3_ID" min="0" max="0" desc1="Camera info" desc2="" desc3="" desc4="" type1="0" type2="10" />
-            <key_info keyname="MIPIR3_INFO" min="0" max="0" desc1="RF info" desc2="" desc3="" desc4="" type1="1" type2="99" />
-            <key_info keyname="I2CR3_EEP" min="0" max="0" desc1="EEPROM i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-            <key_info keyname="CRCR3_EEP" min="0" max="0" desc1="EEPROM CRC error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-            <key_info keyname="CAMR3_CNT" min="0" max="0" desc1="Camera enterance count" desc2="" desc3="" desc4="" type1="1" type2="99" />
-			<key_info keyname="WIFIR3_INFO" min="0" max="0" desc1="WIFI info" desc2="" desc3="" desc4="" type1="1" type2="2" />
-			<key_info keyname="AFR3_FAIL" min="0" max="0" desc1="AF hall error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-			<key_info keyname="AFR3_INFO" min="0" max="0" desc1="AF hall error info" desc2="" desc3="" desc4="" type1="1" type2="2" />
         </sysfs_node>
-        <sysfs_node type="M" key="" value="/sys/class/camera/rear/rear4_hwparam" clear="1" >
-            <key_info keyname="I2CR4_AF" min="0" max="0" desc1="Actuator i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-            <key_info keyname="I2CR4_OIS" min="0" max="0" desc1="OIS i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-            <key_info keyname="I2CR4_SEN" min="0" max="0" desc1="Sensor i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-            <key_info keyname="MIPIR4_SEN" min="0" max="0" desc1="Sensor MIPI error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-            <key_info keyname="CAMIR4_ID" min="0" max="0" desc1="Camera info" desc2="" desc3="" desc4="" type1="0" type2="10" />
-            <key_info keyname="MIPIR4_INFO" min="0" max="0" desc1="RF info" desc2="" desc3="" desc4="" type1="1" type2="99" />
-            <key_info keyname="I2CR4_EEP" min="0" max="0" desc1="EEPROM i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-            <key_info keyname="CRCR4_EEP" min="0" max="0" desc1="EEPROM CRC error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-            <key_info keyname="CAMR4_CNT" min="0" max="0" desc1="Camera enterance count" desc2="" desc3="" desc4="" type1="1" type2="99" />
-			<key_info keyname="WIFIR4_INFO" min="0" max="0" desc1="WIFI info" desc2="" desc3="" desc4="" type1="1" type2="2" />
-			<key_info keyname="AFR4_FAIL" min="0" max="0" desc1="AF hall error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
-			<key_info keyname="AFR4_INFO" min="0" max="0" desc1="AF hall error info" desc2="" desc3="" desc4="" type1="1" type2="2" />
+        <sysfs_node type="M" key="" value="/sys/class/camera/front/front2_hwparam" clear="1" >
+            <key_info keyname="I2CF2_AF" min="0" max="0" desc1="Actuator i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="I2CF2_COM" min="0" max="0" desc1="Companion i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="I2CF2_OIS" min="0" max="0" desc1="OIS i2c error count" desc2="" desc3="" desc4="" type1="0" type2="0" />
+            <key_info keyname="I2CF2_SEN" min="0" max="0" desc1="Sensor i2c error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="MIPIF2_COM" min="0" max="0" desc1="Companion MIPI error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="MIPIF2_SEN" min="0" max="0" desc1="Sensor MIPI error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="CAMIF2_ID" min="0" max="0" desc1="Camera info" desc2="" desc3="" desc4="" type1="0" type2="10" />
         </sysfs_node>
     </hwparam_info>
 
     <!-- Device : Audio -->
     <hwparam_info compID="Audio" feature="" hitType="" compVer="" compManufacture="" order_compID="10" order_feature ="1">
-    </hwparam_info>
-
-    <!-- Device : Audio driver -->
-    <hwparam_info compID="Audio" feature="AUDI" hitType="sm" compVer="0.0" compManufacture="" order_compID="10" order_feature ="2" >
-        <sysfs_node type="S" key="RCV_TEMP_MAX" value="/sys/class/audio/amp/temperature_max_0" clear="0" >
-            <key_info keyname="RCV_TEMP_MAX" min="" max="" desc1="Receiver Temperature Max value" desc2="" desc3="" desc4="" type1="1" type2="99" />
-        </sysfs_node>
-        <sysfs_node type="S" key="RCV_TEMP_OVERCNT" value="/sys/class/audio/amp/temperature_overcount_0" clear="0" >
-            <key_info keyname="RCV_TEMP_OVERCNT" min="" max="" desc1="Receiver Temperature Over Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
-        </sysfs_node>
-        <sysfs_node type="S" key="RCV_EXCU_MAX" value="/sys/class/audio/amp/excursion_max_0" clear="0" >
-            <key_info keyname="RCV_EXCU_MAX" min="" max="" desc1="Receiver Excursion Max value" desc2="" desc3="" desc4="" type1="1" type2="99" />
-        </sysfs_node>
-        <sysfs_node type="S" key="RCV_EXCU_OVERCNT" value="/sys/class/audio/amp/excursion_overcount_0" clear="0" >
-            <key_info keyname="RCV_EXCU_OVERCNT" min="" max="" desc1="Receiver Excursion Over Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
-        </sysfs_node>
-        <sysfs_node type="S" key="SPK_TEMP_MAX" value="/sys/class/audio/amp/temperature_max_1" clear="0" >
-            <key_info keyname="SPK_TEMP_MAX" min="" max="" desc1="Speaker Temperature Max value" desc2="" desc3="" desc4="" type1="1" type2="99" />
-        </sysfs_node>
-        <sysfs_node type="S" key="SPK_TEMP_OVERCNT" value="/sys/class/audio/amp/temperature_overcount_1" clear="0" >
-            <key_info keyname="SPK_TEMP_OVERCNT" min="" max="" desc1="Speaker Temperature Over Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
-        </sysfs_node>
-        <sysfs_node type="S" key="SPK_EXCU_MAX" value="/sys/class/audio/amp/excursion_max_1" clear="0" >
-            <key_info keyname="SPK_EXCU_MAX" min="" max="" desc1="Speaker Excursion Max value" desc2="" desc3="" desc4="" type1="1" type2="99" />
-        </sysfs_node>
-        <sysfs_node type="S" key="SPK_EXCU_OVERCNT" value="/sys/class/audio/amp/excursion_overcount_1" clear="0" >
-            <key_info keyname="SPK_EXCU_OVERCNT" min="" max="" desc1="Speaker Excursion Over Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
-        </sysfs_node>
-        <dev_sysfs_node type="S" key="SPK_TEMP_CAL" value="/sys/class/cirrus/cirrus_cal/temp_r" clear="0" >
-            <key_info keyname="SPK_TEMP_CAL" min="" max="" desc1="Speaker Temperature Calibration" desc2="" desc3="" desc4="" type1="1" type2="99" />
-        </dev_sysfs_node>
-        <dev_sysfs_node type="S" key="SPK_RDC_CAL" value="/sys/class/cirrus/cirrus_cal/rdc_r" clear="0" >
-            <key_info keyname="SPK_RDC_CAL" min="" max="" desc1="Speaker Impedance Calibration" desc2="" desc3="" desc4="" type1="1" type2="99" />
-        </dev_sysfs_node>
-        <dev_sysfs_node type="S" key="RCV_TEMP_CAL" value="/sys/class/cirrus/cirrus_cal/temp" clear="0" >
-            <key_info keyname="RCV_TEMP_CAL" min="" max="" desc1="Receiver Temperature Calibration" desc2="" desc3="" desc4="" type1="1" type2="99" />
-        </dev_sysfs_node>
-        <dev_sysfs_node type="S" key="RCV_RDC_CAL" value="/sys/class/cirrus/cirrus_cal/rdc" clear="0" >
-            <key_info keyname="RCV_RDC_CAL" min="" max="" desc1="Receiver Impedance Calibration" desc2="" desc3="" desc4="" type1="1" type2="99" />
-        </dev_sysfs_node>
-        <sysfs_node type="S" key="DSP_RECOVERY_CNT" value="/sys/class/audio/dsp/srcnt" clear="0" >
-            <key_info keyname="DSP_RECOVERY_CNT" min="" max="" desc1="DSP Recovery Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
-        </sysfs_node>
     </hwparam_info>
 
     <!-- Device : USB -->
@@ -850,6 +804,17 @@
 	    <key_info keyname="C_ARP" min="" max="" desc1="Android Auto Reset Pop-up Count" desc2="" desc3="" desc4="" type1="1" type2="99" />
 	</sysfs_node>
     </hwparam_info>
+
+    <!-- Device : Sensor -->
+    <hwparam_info compID="Sensor" feature="GSFR" hitType="sm" compVer="0.0" compManufacture="" order_compID="12" order_feature ="1">
+		<sysfs_node type="M" key="" value="/sys/class/sensors/ssc_core/grip_fail" clear="0" >
+		    <key_info keyname="GRIP0_REASON" min="0" max="100" desc1="grip0 fail reason" desc2="" desc3="" desc4="" type1="0" type2="0"/>
+		    <key_info keyname="GRIP1_REASON" min="0" max="100" desc1="grip1 fail reason" desc2="" desc3="" desc4="" type1="0" type2="0"/>
+		    <key_info keyname="GRIP2_REASON" min="0" max="100" desc1="grip2 fail reason" desc2="" desc3="" desc4="" type1="0" type2="0"/>
+		    <key_info keyname="GRIP3_REASON" min="0" max="100" desc1="grip3 fail reason" desc2="" desc3="" desc4="" type1="0" type2="0"/>
+		</sysfs_node>
+    </hwparam_info>
+
     <!-- Device : HRM -->
     <hwparam_info compID="HRM" feature="" hitType="" compVer="" compManufacture="" order_compID="13" order_feature ="1" >
     </hwparam_info>
@@ -940,7 +905,15 @@
     </hwparam_info>
 
     <!-- Device : GPU -->
-    <hwparam_info compID="GPU" feature="" hitType="" compVer="" compManufacture="" order_compID="20" order_feature ="1">
+    <hwparam_info compID="GPU" feature="GPUI" hitType="sm" compVer="0.0" compManufacture="" order_compID="20" order_feature ="1">
+        <sysfs_node type="M" key="" value="/sys/kernel/gpu/gpu_info" clear="1" >
+            <key_info keyname="GHG_Q" min="" max="" desc1="GPU_HANG COUNT" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="GPF_Q" min="" max="" desc1="GPU_PAGE_FAULT COUNT" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="GTO_Q" min="" max="" desc1="GPU_TIMEOUT COUNT" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="PFT_Q" min="" max="" desc1="GPU_PREEMPTION_FAULT COUNT" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="CXT_Q" min="" max="" desc1="GPU_CXWAIT_TIMEOUT COUNT" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="GHE_Q" min="" max="" desc1="GPU_HFI_ERROR COUNT" desc2="" desc3="" desc4="" type1="1" type2="0" />
+        </sysfs_node>
     </hwparam_info>
 
     <!-- Device : Heatmap -->
@@ -1020,5 +993,18 @@
         </sysfs_node>
     </hwparam_info>
 
+    <!-- Device : PBA -->
+    <hwparam_info compID="PBA" feature="COND" hitType="sm" compVer="0.0" compManufacture="" order_compID="23" order_feature="1" >
+        <sysfs_node type="M" key="" value="/sys/class/sec/sec_detect_conn/connector_disconnected_count" clear="1" >
+            <key_info keyname="CAM_CONNECT" min="0" max="9999" desc1="cam connector disconnected count" desc2="" desc3="" desc4="" type1="0" type2="0" />
+            <key_info keyname="SUB_CONNECT" min="0" max="9999" desc1="sub connector disconnected count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="MAIN_BAT_DETECT" min="0" max="9999" desc1="main battery connector disconnected count" desc2="" desc3="" desc4="" type1="0" type2="0" />
+            <key_info keyname="SUB_BAT_DETECT" min="0" max="9999" desc1="sub battery connector disconnected count" desc2="" desc3="" desc4="" type1="0" type2="0" />
+            <key_info keyname="UPPER_C2C_DETECT" min="0" max="9999" desc1="upper c2c connector disconnected count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="LOWER_C2C_DETECT" min="0" max="9999" desc1="lower c2c connector disconnected count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="MAIN_DIGITIZER_DETECT" min="0" max="9999" desc1="main digitizer connector disconnected count" desc2="" desc3="" desc4="" type1="0" type2="0" />
+            <key_info keyname="SUB_LOWER_DETECT" min="0" max="9999" desc1="sub_lower connector disconnected count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+        </sysfs_node>
+    </hwparam_info>
 
 </hwparam_document>

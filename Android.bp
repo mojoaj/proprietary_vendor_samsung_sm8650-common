@@ -3723,7 +3723,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libsync",
-                "libmulticam_image_optical_zoom",
+                "libtriplecam_image_optical_zoom",
                 "libmpbase",
                 "libuniplugin",
                 "libc++",
@@ -3851,7 +3851,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libsync",
-                "libmulticam_video_optical_zoom",
+                "libtriplecam_video_optical_zoom",
                 "libmpbase",
                 "libOpenCL",
                 "libuniplugin",
@@ -4235,10 +4235,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libsync",
                 "libtswrappercommon",
-                "libdsmanager",
-                "libcamxsettingsmanager",
-                "libsensorlistener",
-                "libz",
+                "libcamxcommonutils",
                 "libc++",
                 "libclang_rt.ubsan_standalone",
                 "libc",
@@ -4268,10 +4265,10 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libsync",
-                "libsecsettingsmanager",
                 "libtswrappercommon",
                 "libcamxcommonutils",
                 "libc++",
+                "libclang_rt.ubsan_standalone",
                 "libc",
                 "libm",
                 "libdl",
@@ -4300,8 +4297,9 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libsync",
                 "libtswrappercommon",
-                "libsnap_vndk",
+                "libcamxcommonutils",
                 "libc++",
+                "libclang_rt.ubsan_standalone",
                 "libc",
                 "libm",
                 "libdl",
@@ -4335,58 +4333,6 @@ cc_prebuilt_library_shared {
                 "libc++",
                 "libc",
                 "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTsAeFront_e3",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/libTsAeFront_e3.so",
-            ],
-            shared_libs: [
-                "libclang_rt.ubsan_standalone",
-                "liblog",
-                "libm",
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTsAe_e3",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/libTsAe_e3.so",
-            ],
-            shared_libs: [
-                "libclang_rt.ubsan_standalone",
-                "liblog",
-                "libm",
-                "libc",
                 "libdl",
             ],
         },
@@ -7720,31 +7666,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libAISR_core.camera.samsung",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libAISR_core.camera.samsung.so",
-            ],
-            shared_libs: [
-                "libsnap_vndk",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libAISegmenter_v2.camera.samsung",
     owner: "samsung",
     strip: {
@@ -9255,56 +9176,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libPortraitDistortionCorrection.arcsoft",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libPortraitDistortionCorrection.arcsoft.so",
-            ],
-            shared_libs: [
-                "libmpbase",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libPortraitDistortionCorrectionCali.arcsoft",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libPortraitDistortionCorrectionCali.arcsoft.so",
-            ],
-            shared_libs: [
-                "libmpbase",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libPortraitSolution.camera.samsung_preview",
     owner: "samsung",
     strip: {
@@ -9918,60 +9789,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libTetraSR10.camera.samsung",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTetraSR10.camera.samsung.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libc++",
-                "libion",
-                "liblog",
-                "libutils",
-                "libutilscallstack",
-                "libTetraSR10Tuning.camera.samsung",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTetraSR10Tuning.camera.samsung",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTetraSR10Tuning.camera.samsung.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libTouchInputVM",
     owner: "samsung",
     strip: {
@@ -10283,82 +10100,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libTsAf_E123Q",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTsAf_E123Q.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libm",
-                "libc",
-                "libc++",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTsAwbFront_E123",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTsAwbFront_E123.so",
-            ],
-            shared_libs: [
-                "libclang_rt.ubsan_standalone",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTsAwb_E3",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTsAwb_E3.so",
-            ],
-            shared_libs: [
-                "libclang_rt.ubsan_standalone",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libTxPwrJni",
     owner: "samsung",
     strip: {
@@ -10374,62 +10115,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libandroid_net",
                 "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libUltraWideDistortionCorrection.camera.samsung",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libUltraWideDistortionCorrection.camera.samsung.so",
-            ],
-            shared_libs: [
-                "libmpbase",
-                "libPortraitDistortionCorrection.arcsoft",
-                "libPortraitDistortionCorrectionCali.arcsoft",
-                "libBeauty_v4.camera.samsung",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libUltraWideDistortionCorrection.uniplugin@1.0",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libUltraWideDistortionCorrection.uniplugin@1.0.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libuniplugin",
-                "libUltraWideDistortionCorrection.camera.samsung",
                 "libc++",
                 "libc",
                 "libm",
@@ -10574,34 +10259,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libWideDistortionCorrection.camera.samsung",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libWideDistortionCorrection.camera.samsung.so",
-            ],
-            shared_libs: [
-                "libmpbase",
-                "libPortraitDistortionCorrection.arcsoft",
-                "libPortraitDistortionCorrectionCali.arcsoft",
-                "libBeauty_v4.camera.samsung",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "lib_SamsungRec_08020",
     owner: "samsung",
     strip: {
@@ -10638,10 +10295,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/lib_SoundAlive_3DPosition_ver202.so",
             ],
             shared_libs: [
-                "liblog",
                 "libc",
                 "libm",
                 "libdl",
+                "liblog",
             ],
         },
     },
@@ -10662,10 +10319,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so",
             ],
             shared_libs: [
-                "liblog",
                 "libc",
                 "libm",
                 "libdl",
+                "liblog",
             ],
         },
     },
@@ -10699,7 +10356,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "lib_SoundBooster_ver2000",
+    name: "lib_SoundBooster_ver2050",
     owner: "samsung",
     strip: {
         none: true,
@@ -10707,7 +10364,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/lib_SoundBooster_ver2000.so",
+                "proprietary/vendor/lib64/lib_SoundBooster_ver2050.so",
             ],
             shared_libs: [
                 "liblog",
@@ -13349,6 +13006,29 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libegis_fp_normal_sensor_test",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libegis_fp_normal_sensor_test.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libengine_did",
     owner: "samsung",
     strip: {
@@ -13743,7 +13423,6 @@ cc_prebuilt_library_shared {
                 "libsavscmn",
                 "liblog",
                 "libc",
-                "libdl",
             ],
         },
     },
@@ -13885,6 +13564,32 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libloc_core",
                 "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgf_in_system_lib",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgf_in_system_lib.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libc++",
+                "liblog",
                 "libc",
                 "libm",
                 "libdl",
@@ -16049,33 +15754,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmaskdetection.uniplugin@1.0",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmaskdetection.uniplugin@1.0.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libFace_Landmark_API.camera.samsung",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmcaimegpu.samsung",
     owner: "samsung",
     strip: {
@@ -16708,81 +16386,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmulticam_image_optical_zoom",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmulticam_image_optical_zoom.so",
-            ],
-            shared_libs: [
-                "libmpbase",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmulticam_optical_zoom_control",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmulticam_optical_zoom_control.so",
-            ],
-            shared_libs: [
-                "libmpbase",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmulticam_video_optical_zoom",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmulticam_video_optical_zoom.so",
-            ],
-            shared_libs: [
-                "libmpbase",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -18443,10 +18046,13 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libqfp_sensortest.so",
             ],
             shared_libs: [
+                "libcutils",
                 "liblog",
+                "libutils",
+                "libc++",
+                "libc",
                 "libm",
                 "libdl",
-                "libc",
             ],
         },
     },
@@ -20489,7 +20095,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsfp_sensor.so",
             ],
             shared_libs: [
-                "libqfp_sensortest",
                 "libbase",
                 "libcutils",
                 "libutils",
@@ -20499,6 +20104,10 @@ cc_prebuilt_library_shared {
                 "android.hardware.biometrics.fingerprint-V3-ndk",
                 "android.hardware.biometrics.common-V3-ndk",
                 "vendor.samsung.hardware.biometrics.fingerprint-V1-ndk",
+                "libsynaFpSensorTestNwd",
+                "libegis_fp_normal_sensor_test",
+                "libgf_in_system_lib",
+                "libqfp_sensortest",
                 "liblog",
                 "libcrypto",
                 "libc++",
@@ -21177,6 +20786,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsns_device_mode_stub",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsns_device_mode_stub.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libutils",
+                "libcutils",
+                "libcdsprpc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsns_direct_channel_stub",
     owner: "samsung",
     strip: {
@@ -21785,6 +21422,29 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsynaFpSensorTestNwd",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsynaFpSensorTestNwd.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsynergy_loc_api",
     owner: "samsung",
     strip: {
@@ -22134,7 +21794,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libsync",
                 "com.qti.chi.override",
-                "libmulticam_optical_zoom_control",
+                "libtriplecam_optical_zoom_control",
                 "libc++",
                 "libc",
                 "libm",
@@ -22359,6 +22019,81 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libtlpd_crypto",
                 "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtriplecam_image_optical_zoom",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtriplecam_image_optical_zoom.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtriplecam_optical_zoom_control",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtriplecam_optical_zoom_control.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtriplecam_video_optical_zoom",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
                 "libc",
                 "libm",
                 "libdl",
@@ -23070,7 +22805,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "nfc_nci_nxpsn_ecp",
+    name: "nfc_nci_nxpsn",
     owner: "samsung",
     strip: {
         none: true,
@@ -23078,7 +22813,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/nfc_nci_nxpsn_ecp.so",
+                "proprietary/vendor/lib64/nfc_nci_nxpsn.so",
             ],
             shared_libs: [
                 "android.hardware.nfc@1.0",
@@ -25467,8 +25202,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbinder_ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "android.hardware.common-V2-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -26359,6 +26092,8 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/factory.ssc",
             ],
             shared_libs: [
+                "libcdsprpc",
+                "libsns_device_mode_stub",
                 "libqmi_common_so",
                 "libqmi_cci",
                 "libqmi_encdec",

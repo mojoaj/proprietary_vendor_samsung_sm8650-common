@@ -48,7 +48,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/hermesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hermesd.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/hw/init.qti.kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/init.audio.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.audio.samsung.rc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/init.spdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.spdaemon.rc \
@@ -56,7 +55,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/init.vendor.onebinary.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.onebinary.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/init/init.vendor.uwb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.uwb.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/init.vendor.wlan.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.wlan.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
@@ -67,7 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/tlpd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tlpd.rc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
@@ -76,15 +73,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.qti.smp2p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.smp2p.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.samsung.hardware.thermal-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.thermal-default.rc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.samsung.hardware.uwb@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.uwb@1.0-service.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.qcom.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/wifi_qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_qcom.rc \
@@ -92,15 +86,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/libuwb-countrycode.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-countrycode.conf \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/libuwb-feature.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-feature.conf \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/libuwb-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-nxp.conf \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/libuwb-uci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-uci.conf \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/locale/plmn_delta_eng.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_eng.bin \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/locale/plmn_delta_zh-rCN.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rCN.bin \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/locale/plmn_delta_zh-rHK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rHK.bin \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/locale/plmn_delta_zh-rTW.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rTW.bin \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/media_codecs_performance_pineapple.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_pineapple.xml \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/media_codecs_performance_pineapple_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_pineapple_vendor.xml \
@@ -132,13 +121,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/sec_config_oem:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config_oem \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-qsap-location.policy \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
@@ -178,7 +165,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/str/str_preference_data.dat:$(TARGET_COPY_OUT_VENDOR)/etc/str/str_preference_data.dat \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/uwb_key:$(TARGET_COPY_OUT_VENDOR)/etc/uwb_key \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
@@ -403,8 +389,6 @@ PRODUCT_PACKAGES += \
     libFastUWDistortionCorrection.camera.samsung \
     libFlacSwDec \
     libFrucSSMLib \
-    libGPMTEEC_vendor \
-    libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
     libHDRVerifier_v1.camera.samsung \
@@ -460,15 +444,6 @@ PRODUCT_PACKAGES += \
     libSnpeHtpV75Stub \
     libTetraMFP10.camera.samsung \
     libTetraMFP10Tuning.camera.samsung \
-    libTouchInputVM \
-    libTrustedInput \
-    libTrustedInputAIDL \
-    libTrustedInputTZ \
-    libTrustedInputUtils \
-    libTrustedUI \
-    libTrustedUIAIDL \
-    libTrustedUITZ \
-    libTrustedUIVM \
     libTxPwrJni \
     libUniPluginUtils \
     libUniScaler.uniplugin@1.0 \
@@ -663,7 +638,6 @@ PRODUCT_PACKAGES += \
     liblocationservice_glue \
     liblowi_client \
     liblowi_common \
-    liblowi_wifihal \
     libmcaimegpu.samsung \
     libmctfengine_stub \
     libmdmdetect \
@@ -812,7 +786,6 @@ PRODUCT_PACKAGES += \
     libshotsuggestion \
     libshotsuggestion_engines \
     libshsc \
-    libsi \
     libsimba.media.samsung \
     libsingle_portrait_preview.uniplugin@1.0 \
     libskeymint10device \
@@ -939,7 +912,6 @@ PRODUCT_PACKAGES += \
     unihal_main \
     unihal_scenario \
     unihal_uniplugin@1.0 \
-    uwb_uci.hal \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -966,18 +938,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.qseecom-V1-ndk \
     vendor.qti.hardware.qseecom@1.0 \
-    vendor.qti.hardware.qteeconnector@1.0 \
-    vendor.qti.hardware.radio.atfwd-V1-ndk \
     vendor.qti.hardware.secureprocessor.common@1.0-helper \
     vendor.qti.hardware.secureprocessor.common@1.0 \
     vendor.qti.hardware.secureprocessor.config@1.0 \
     vendor.qti.hardware.secureprocessor.device@1.0 \
-    vendor.qti.hardware.trustedui-V1-ndk \
-    vendor.qti.hardware.trustedui@1.0 \
-    vendor.qti.hardware.trustedui@1.1 \
-    vendor.qti.hardware.trustedui@1.2 \
-    vendor.qti.qccvndhal_aidl-V1-ndk \
-    vendor.qti.qccvndhal_aidl-halimpl \
     vendor.qti.qesdhal@1.0 \
     vendor.qti.qesdhal@1.1 \
     vendor.qti.qesdhal@1.2 \
@@ -990,7 +954,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.camera.device-V1-ndk \
     vendor.samsung.hardware.camera.provider-V1-ndk \
     vendor.samsung.hardware.gnss-V2-ndk_platform \
-    vendor.samsung.hardware.hyper-V2-ndk \
     vendor.samsung.hardware.keymint-V3-ndk \
     vendor.samsung.hardware.media.mpp-V5-ndk \
     vendor.samsung.hardware.radio-V1-ndk \
@@ -1008,7 +971,6 @@ PRODUCT_PACKAGES += \
     EuiccGoogle \
     uimservicelibrary \
     android.hardware.gnss-aidl-service-qti.xml \
-    atfwd-saidl.xml \
     bttpi-saidl.xml \
     qms-saidl.xml \
     secaudiohalaidl_manifest.xml \
@@ -1018,12 +980,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss-service.xml \
     vendor.qti.hardware.qseecom@1.0-service.xml \
-    vendor.qti.hardware.trustedui-aidl-service.xml \
-    vendor.qti.qccvndhal_aidl-service.xml \
     vendor.samsung.hardware.camera.provider-service.xml \
     vendor.samsung.hardware.thermal-default.xml \
-    vendor.samsung.hardware.uwb@1.0-service.xml \
-    ATFWD-daemon \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -1043,12 +1001,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.color-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.secureprocessor@1.0 \
-    vendor.qti.hardware.trustedui-aidl-service-qti \
-    vendor.qti.hardware.trustedui@1.0-service-qti \
     vendor.qti.media.c2@1.0-service \
     vendor.samsung.hardware.camera.provider-service_64 \
     vendor.samsung.hardware.thermal-service \
-    vendor.samsung.hardware.uwb@1.0-service \
     init.kernel.post_boot-pineapple \
     init.kernel.post_boot \
     init.qcom.class_core \
@@ -1060,12 +1015,10 @@ PRODUCT_PACKAGES += \
     irsc_util \
     loadalgo \
     loc_launcher \
-    lowi-server \
     pd-mapper \
     pm-proxy \
     pm-service \
     ppd \
-    qcc-vendor \
     qcom-system-daemon \
     qdcmss \
     qms \
@@ -1081,17 +1034,13 @@ PRODUCT_PACKAGES += \
     spdaemon \
     sscrpcd \
     ssgtzd \
-    ssr_diag \
     ssr_setup \
-    subsystem_ramdump \
     system_dlkm_modprobe \
     tftp_server \
     time_daemon \
     tlpd \
-    trusteduilistener \
     ubwcconvert \
-    vendor_modprobe \
-    xtra-daemon
+    vendor_modprobe
 
 PRODUCT_PACKAGES += \
     vendor_lib64_libEGL_adreno_so \

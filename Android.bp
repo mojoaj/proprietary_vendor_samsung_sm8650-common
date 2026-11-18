@@ -8240,65 +8240,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libGPMTEEC_vendor",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libGPMTEEC_vendor.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libGPTEE_vendor",
-                "libminkdescriptor",
-                "libminksocket_vendor",
-                "libdmabufheap",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libGPTEE_vendor",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libGPTEE_vendor.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libbase",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libGPreqcancel",
     owner: "samsung",
     strip: {
@@ -9776,317 +9717,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libTetraMFP10Tuning.camera.samsung.so",
             ],
             shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTouchInputVM",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTouchInputVM.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "vendor.qti.hardware.trustedui@1.0",
-                "vendor.qti.hardware.trustedui@1.1",
-                "vendor.qti.hardware.trustedui@1.2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTrustedInput",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTrustedInput.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "vendor.qti.hardware.trustedui@1.0",
-                "vendor.qti.hardware.trustedui@1.1",
-                "vendor.qti.hardware.trustedui@1.2",
-                "vendor.qti.hardware.systemhelper@1.0",
-                "libTrustedInputTZ",
-                "libTouchInputVM",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTrustedInputAIDL",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTrustedInputAIDL.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libbinder_ndk",
-                "vendor.qti.hardware.trustedui-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTrustedInputTZ",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTrustedInputTZ.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "libbase",
-                "vendor.qti.hardware.trustedui@1.0",
-                "vendor.qti.hardware.trustedui@1.1",
-                "vendor.qti.hardware.trustedui@1.2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTrustedInputUtils",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTrustedInputUtils.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTrustedUI",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTrustedUI.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "vendor.qti.hardware.trustedui@1.0",
-                "vendor.qti.hardware.trustedui@1.1",
-                "vendor.qti.hardware.trustedui@1.2",
-                "vendor.qti.hardware.systemhelper@1.0",
-                "libhidlmemory",
-                "libcpion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTrustedUIAIDL",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTrustedUIAIDL.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbinder_ndk",
-                "libutils",
-                "libcutils",
-                "libbase",
-                "libdmabufheap",
-                "libminksocket_vendor",
-                "libvmmem",
-                "vendor.qti.hardware.trustedui-V1-ndk",
-                "libdisplayconfig.qti",
-                "libtrustedapploader",
-                "vendor.qti.hardware.display.config-V7-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTrustedUITZ",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTrustedUITZ.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "libbase",
-                "libdmabufheap",
-                "libsi",
-                "libQSEEComAPI",
-                "android.hardware.graphics.mapper@4.0",
-                "vendor.qti.hardware.trustedui@1.0",
-                "vendor.qti.hardware.trustedui@1.1",
-                "vendor.qti.hardware.trustedui@1.2",
-                "vendor.qti.hardware.systemhelper@1.0",
-                "vendor.display.config@1.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "libdisplayconfig.qti",
-                "libtrustedapploader",
-                "libhidlmemory",
-                "libvmmem",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTrustedUIVM",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTrustedUIVM.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "libbase",
-                "libdmabufheap",
-                "libminksocket_vendor",
-                "vendor.qti.hardware.trustedui@1.0",
-                "vendor.qti.hardware.trustedui@1.1",
-                "vendor.qti.hardware.trustedui@1.2",
-                "libdisplayconfig.qti",
-                "libtrustedapploader",
-                "libhidlmemory",
                 "libc++",
                 "libc",
                 "libm",
@@ -15722,38 +15352,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "liblowi_wifihal",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/liblowi_wifihal.so",
-            ],
-            shared_libs: [
-                "liblowi_client",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libgps.utils",
-                "libloc_base_util",
-                "libloc_mq_client",
-                "liblowi_common",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmcaimegpu.samsung",
     owner: "samsung",
     strip: {
@@ -20287,36 +19885,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsi",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsi.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libpng",
-                "libQSEEComAPI",
-                "libtrustedapploader",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsimba.media.samsung",
     owner: "samsung",
     strip: {
@@ -23818,39 +23386,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "uwb_uci.hal",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/uwb_uci.hal.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libhardware",
-                "libbase",
-                "libchrome",
-                "libutils",
-                "libhidlbase",
-                "libcrypto",
-                "libmemunreachable",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.display.color@1.0",
     owner: "samsung",
     strip: {
@@ -24702,59 +24237,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.qteeconnector@1.0",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.radio.atfwd-V1-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.radio.atfwd-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.secureprocessor.common@1.0-helper",
     owner: "samsung",
     strip: {
@@ -24856,183 +24338,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.trustedui-V1-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.trustedui-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.trustedui@1.0",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.trustedui@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.trustedui@1.1",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.trustedui@1.1.so",
-            ],
-            shared_libs: [
-                "android.hidl.memory.block@1.0",
-                "android.hidl.memory.token@1.0",
-                "vendor.qti.hardware.trustedui@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.trustedui@1.2",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.trustedui@1.2.so",
-            ],
-            shared_libs: [
-                "android.hidl.memory.block@1.0",
-                "android.hidl.memory.token@1.0",
-                "vendor.qti.hardware.trustedui@1.0",
-                "vendor.qti.hardware.trustedui@1.1",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.qccvndhal_aidl-V1-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.qccvndhal_aidl-halimpl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.qccvndhal_aidl-halimpl.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libfmq",
-                "libcutils",
-                "liblog",
-                "libbase",
-                "libbinder",
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "vendor.qti.qccvndhal_aidl-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -25359,31 +24664,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/vendor.samsung.hardware.gnss-V2-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.hyper-V2-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -25729,15 +25009,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "atfwd-saidl.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/atfwd-saidl.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "bttpi-saidl.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/bttpi-saidl.xml",
@@ -25819,24 +25090,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "vendor.qti.hardware.trustedui-aidl-service.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.trustedui-aidl-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.qti.qccvndhal_aidl-service.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.qccvndhal_aidl-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.samsung.hardware.camera.provider-service.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.camera.provider-service.xml",
@@ -25851,54 +25104,6 @@ prebuilt_etc_xml {
     src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal-default.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.samsung.hardware.uwb@1.0-service.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.uwb@1.0-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "ATFWD-daemon",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/ATFWD-daemon",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libqmi_cci",
-                "libqmi",
-                "libmdmdetect",
-                "libqmi_client_qmux",
-                "libqmi_client_helper",
-                "libqmiservices",
-                "liblog",
-                "libavservices_minijail",
-                "libqmi_common_so",
-                "libbase",
-                "libhidlbase",
-                "vendor.qti.hardware.radio.atfwd-V1-ndk",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
     soc_specific: true,
 }
 
@@ -26555,75 +25760,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vendor.qti.hardware.trustedui-aidl-service-qti",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.qti.hardware.trustedui-aidl-service-qti",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbase",
-                "libutils",
-                "libbinder_ndk",
-                "vendor.qti.hardware.trustedui-V1-ndk",
-                "libTrustedUIAIDL",
-                "libTrustedInputAIDL",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.qti.hardware.trustedui@1.0-service-qti",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware",
-                "libhidlbase",
-                "vendor.qti.hardware.trustedui@1.0",
-                "vendor.qti.hardware.trustedui@1.1",
-                "vendor.qti.hardware.trustedui@1.2",
-                "vendor.qti.hardware.systemhelper@1.0",
-                "libTrustedUI",
-                "libTrustedInput",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "vendor.qti.media.c2@1.0-service",
     owner: "samsung",
     target: {
@@ -26728,37 +25864,6 @@ cc_prebuilt_binary {
                 "android.frameworks.cameraservice.service-V1-ndk",
                 "service-listener-ext-aidl-V1-ndk",
                 "libhypervintf",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.samsung.hardware.uwb@1.0-service",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.samsung.hardware.uwb@1.0-service",
-            ],
-            shared_libs: [
-                "libbase",
-                "libutils",
-                "liblog",
-                "libmemunreachable",
-                "libbinder_ndk",
-                "uwb_uci.hal",
                 "libc++",
                 "libc",
                 "libm",
@@ -26926,41 +26031,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "lowi-server",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/lowi-server",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libgps.utils",
-                "libloc_base_util",
-                "libloc_mq_client",
-                "liblog",
-                "libnl",
-                "libwpa_client",
-                "liblowi_common",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libdiag",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "pd-mapper",
     owner: "samsung",
     target: {
@@ -27069,50 +26139,6 @@ cc_prebuilt_binary {
                 "libbase",
                 "libbinder_ndk",
                 "vendor.qti.hardware.display.color-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "qcc-vendor",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/qcc-vendor",
-            ],
-            shared_libs: [
-                "libbinder_shim",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libprotobuf-cpp-lite-21.7",
-                "libqcc_file_agent",
-                "libqcc_sdk",
-                "libqmi_cci",
-                "libqmiservices",
-                "libidl",
-                "libz",
-                "libbase",
-                "libfmq",
-                "libhidlbase",
-                "libbinder",
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "vendor.qti.qccvndhal_aidl-V1-ndk",
-                "vendor.qti.qccvndhal_aidl-halimpl",
-                "vendor.qti.hardware.qccsyshal@1.2",
                 "libc++",
                 "libc",
                 "libm",
@@ -27607,34 +26633,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "ssr_diag",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/ssr_diag",
-            ],
-            shared_libs: [
-                "libdiag",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "ssr_setup",
     owner: "samsung",
     target: {
@@ -27646,34 +26644,6 @@ cc_prebuilt_binary {
                 "libcutils",
                 "libutils",
                 "libmdmdetect",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "subsystem_ramdump",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/subsystem_ramdump",
-            ],
-            shared_libs: [
-                "libmdmdetect",
-                "libcutils",
-                "libutils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -27787,39 +26757,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "trusteduilistener",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/trusteduilistener",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libminksocket_vendor",
-                "liblog",
-                "vendor.qti.hardware.systemhelper@1.0",
-                "libhidlbase",
-                "libutils",
-                "libcutils",
-                "libTrustedInputUtils",
-                "vendor.qti.hardware.display.config-V7-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "ubwcconvert",
     owner: "samsung",
     target: {
@@ -27853,49 +26790,6 @@ sh_binary {
     owner: "samsung",
     src: "proprietary/vendor/bin/vendor_modprobe.sh",
     filename: "vendor_modprobe.sh",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "xtra-daemon",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/xtra-daemon",
-            ],
-            shared_libs: [
-                "libbinder_shim",
-                "libutils",
-                "libcutils",
-                "libcrypto",
-                "libssl",
-                "libsqlite",
-                "libgps.utils",
-                "libloc_core",
-                "libizat_core",
-                "liblbs_core",
-                "liblog",
-                "libandroid_net",
-                "libavservices_minijail",
-                "libsys_info_cache",
-                "libpal_net_if",
-                "libbinder",
-                "libbinder_ndk",
-                "libqcc_sdk",
-                "libqcc_file_agent",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
     soc_specific: true,
 }
 
